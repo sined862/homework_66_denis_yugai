@@ -9,5 +9,5 @@ console.log(stringThree);
 console.log(stringFive);
 console.log(stringTwo);
 console.log(stringSix);
-console.log(stringFive);
+console.log(stringFour);
 console.log(stringOne);
