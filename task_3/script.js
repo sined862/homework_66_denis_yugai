@@ -1,9 +1,19 @@
 ﻿const container = document.getElementById('container');
 console.log(container);
 
-for (i=0; i < 5; i++) {
-    const newElement = document.createElement('div');
-    newElement.innerText = `Element ${i+1}`;
-    newElement.className = "element"
-    container.appendChild(newElement)
+
+
+function elementsAdd() {
+    for (i=0; i < 5; i++) {
+        const element = document.createElement('div');
+        const spanElement = document.createElement('span')
+        spanElement.innerText = ` ${i+1}`
+        element.innerText = `Element`;
+        element.className = "element"
+        spanElement.className = `color-${i+1}`
+        container.appendChild(element)
+        element.appendChild(spanElement)  
+    }
 }
+
+elementsAdd()
